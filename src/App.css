@@ -1,0 +1,151 @@
+#root {
+  width: 500px;
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f7f9;
+  color: #2d3748;
+}
+
+h2 {
+  margin-top: 0;
+  font-weight: 700;
+  color: #2d3748;
+  font-size: 24px; /* Increased font size */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #4a5568;
+  font-size: 14px; /* Increased font size */
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #2d3748;
+  font-family: 'Lato', sans-serif;
+  transition: border-color 0.2s;
+  font-size: 16px; /* Increased font size */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 700;
+  transition: background-color 0.2s;
+  font-size: 16px; /* Increased font size */
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+button.secondary {
+  background-color: #e2e8f0;
+  color: #2d3748;
+}
+
+button.secondary:hover {
+  background-color: #cbd5e0;
+}
+
+.keywords {
+  margin-top: 24px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.keyword-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #f4f7f9;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.keyword-name {
+  font-weight: 700;
+  color: #2d3748;
+  font-size: 16px; /* Increased font size */
+}
+
+.keyword-count {
+  color: #718096;
+  font-size: 14px; /* Increased font size */
+  margin-left: 8px; /* Added space between keyword and count */
+}
+
+.keyword-actions button {
+  margin-left: 8px;
+  padding: 5px 10px;
+  font-size: 13px; /* Adjusted font size */
+}
+
+.edit-form {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #f4f7f9;
+  border-radius: 8px;
+}
+
+.edit-form.active {
+  display: block;
+}
+
+.edit-form input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.add-role-form {
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.add-role-form.active {
+  display: block;
+}
+
+.no-data {
+  color: #a0aec0;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}

@@ -1,47 +1,70 @@
-# Job Keywords Tracker
+# Getting Started with Create React App
 
-Job Keywords Tracker is a Chrome extension that helps you extract and track technical keywords from job descriptions. By analyzing the frequency of keywords for different job roles, you can tailor your resume and cover letter to better match the requirements of the jobs you are applying for.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-- Extract technical keywords from job descriptions using the Gemini API.
-- Track keyword frequencies for different job roles.
-- Add and manage a list of job roles.
-- Edit and delete keywords to maintain a clean and accurate list.
-- Securely stores your Gemini API key.
+In the project directory, you can run:
 
-## How to Use
+### `npm start`
 
-1.  **Select a Job Role**: Choose a job role from the dropdown menu in the extension popup. If the role you are looking for is not in the list, you can add it.
-2.  **Add a New Role**: Click the "+ Add New Role" button, enter the title of the new role, and click "Save Role".
-3.  **Paste Job Description**: Copy a job description and paste it into the "Job Description" text area.
-4.  **Analyze Keywords**: Click the "Analyze Keywords" button. The extension will send the job description to the Gemini API to extract technical keywords and their frequencies.
-5.  **View Keywords**: The extracted keywords will be displayed in a list, sorted by frequency. You can see how many times each keyword has appeared in the job descriptions you have analyzed for the selected role.
-6.  **Manage Keywords**: You can edit the name and count of each keyword or delete it from the list.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Installation
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-To install the extension, follow these steps:
+### `npm test`
 
-1.  Clone or download this repository to your local machine.
-2.  Open Google Chrome and navigate to `chrome://extensions`.
-3.  Enable "Developer mode" in the top right corner.
-4.  Click "Load unpacked" and select the directory where you cloned or downloaded this repository.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-The Job Keywords Tracker extension should now be visible in your extensions list and accessible from the Chrome toolbar.
+### `npm run build`
 
-## Configuration
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Before you can use the extension, you need to configure your Gemini API key:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1.  Right-click on the extension icon in the Chrome toolbar and select "Options".
-2.  Enter your Gemini API key in the provided field. You can obtain a free API key from Google AI Studio.
-3.  Click "Save". The key is stored securely using `chrome.storage.sync`.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Privacy
+### `npm run eject`
 
-Your Gemini API key and the keywords you track are stored locally on your machine using Chrome's storage APIs. The job descriptions you analyze are sent to the Gemini API for processing, but they are not stored by the extension.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## For Developers
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-This extension is built with HTML, CSS, and JavaScript. It uses the `fetch` API to communicate with the Gemini API. The `manifest.json` file is configured for Manifest V3.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
