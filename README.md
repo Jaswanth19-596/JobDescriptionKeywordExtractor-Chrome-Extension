@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Job Keywords Tracker [![Built with React](https://img.shields.io/badge/built%20with-React-61DAFB.svg?style=for-the-badge&logo=react)](https://reactjs.org/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+a
+Job Keywords Tracker is a Chrome extension that helps you analyze job descriptions and identify the most frequent technical keywords for different job roles. Keep track of the skills that are in demand and tailor your resume and interview preparation accordingly.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [How to Use](#how-to-use)
+- [Installation](#installation)
+- [Technology Stack](#technology-stack)
+- [Contributing](#contributing)
+- [License](#license)
+- [Disclaimer](#disclaimer)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Analyze Job Descriptions:** Paste any job description into the extension and get a list of technical keywords and their frequencies.
+- **Role-Based Tracking:** Organize your keyword analysis by job roles (e.g., Software Engineer, Data Analyst, Product Manager).
+- **Add Custom Roles:** Flexibility to add new job roles that are relevant to your career path.
+- **Edit and Delete Keywords:** Curate your keyword list by editing or removing entries.
+- **Secure API Key Storage:** Your Gemini API key is stored securely using Chrome's storage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+### Extension Popup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Extension in Action](https://placehold.co/600x400/gif)
 
-### `npm run build`
+### Options Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Options Page](https://placehold.co/600x400/png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Set Your API Key:**
 
-### `npm run eject`
+    - Click on the extension icon and go to the "Options" page.
+    - Enter your Gemini API key. You can get a free API key from [Google AI Studio](https://aistudio.google.com/) and refer to the [Gemini API documentation](https://ai.google.dev/docs) for more information.
+    - Click "Save".
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2.  **Analyze a Job Description:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    - Open the extension popup.
+    - Select a job role from the dropdown or add a new one.
+    - Paste the job description into the text area.
+    - Click "Analyze Keywords".
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.  **View and Manage Keywords:**
+    - The extracted keywords will appear below the "Analyze Keywords" button.
+    - You can see the frequency of each keyword.
+    - You can edit or delete keywords as needed.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+Since this extension is not yet published on the Chrome Web Store, you can install it locally by following these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1.  **Clone the repository:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+    git clone https://github.com/your-username/job-keywords-tracker.git
+    ```
 
-### Code Splitting
+2.  **Install dependencies:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    cd job-keywords-tracker
+    npm install
+    ```
 
-### Analyzing the Bundle Size
+3.  **Build the extension:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```bash
+    npm run build
+    ```
 
-### Making a Progressive Web App
+4.  **Load the extension in Chrome:**
+    - Open Chrome and go to `chrome://extensions/`.
+    - Enable "Developer mode".
+    - Click "Load unpacked".
+    - Select the `build` directory that was created in the previous step.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Technology Stack
 
-### Advanced Configuration
+- **Frontend:** React
+- **Language Model:** Google Gemini Pro
+- **State Management:** React Hooks
+- **Routing:** React Router
+- **Styling:** CSS
+- **Chrome Extension APIs:** `chrome.storage`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+Contributions are welcome! Please open an issue or submit a pull request if you have any ideas for improvement.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Disclaimer
+
+This is a personal project and is not an official Google product.
